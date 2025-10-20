@@ -51,7 +51,7 @@ metadata:
   alb.ingress.kubernetes.io/certificate-arn:
   alb.ingress.kubernetes.io/target-type: ip
   alb.ingress.kubernetes.io/scheme: internet-facing
-  alb.ingress.kubernetes.io/group.name: sameeer
+  alb.ingress.kubernetes.io/group.name: sameer
 spec:
   ingressClassName: albs
   rules:
