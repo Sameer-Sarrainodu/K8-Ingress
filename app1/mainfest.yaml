@@ -54,7 +54,7 @@ metadata:
     alb.ingress.kubernetes.io/scheme: internet-facing
     alb.ingress.kubernetes.io/group.name: sameer
 spec:
-  ingressClassName: albs
+  ingressClassName: alb
   rules:
     - host: "app1.sharkdev.shop"
     - http:

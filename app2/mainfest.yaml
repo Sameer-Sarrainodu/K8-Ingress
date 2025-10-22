@@ -55,7 +55,7 @@ metadata:
 
 
 spec:
-  ingressClassName: albs
+  ingressClassName: alb
   rules:
   - host: "app2.sharkdev.shop"
   - http:
