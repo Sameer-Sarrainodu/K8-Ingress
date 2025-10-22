@@ -57,16 +57,16 @@ metadata:
 spec:
   ingressClassName: alb
   rules:
-  - host: "app2.sharkdev.shop"
-  - http:
-      paths:
-      - pathType: Prefix
-        path: "/"
-        backend:
-          service:
-            name: app2
-            port:
-              number: 80
+    - host: "app2.sharkdev.shop"
+      http:
+        paths:
+          - path: "/"
+            pathType: Prefix
+            backend:
+              service:
+                name: app2
+                port:
+                  number: 80
 
 
 
