@@ -9,7 +9,7 @@ metadata:
 spec:
   replicas: 2
   selector:
-    matchlabels:
+    matchLabels:
       purpose: ingress
       project: roboshop
       app: app1
@@ -47,12 +47,12 @@ kind: Ingress
 metadata:
   name: app1
   annotations:
-  alb.ingress.kubernetes.io/listen-ports: '[{"HTTPS": 443}]'
-  alb.ingress.kubernetes.io/certificate-arn: arn:aws:acm:us-east-1:968220652823:certificate/09d7005d-2608-4201-848c-63ea2661ec02
-  alb.ingress.kubernetes.io/target-type: ip
+    alb.ingress.kubernetes.io/listen-ports: '[{"HTTPS": 443}]'
+    alb.ingress.kubernetes.io/certificate-arn: arn:aws:acm:us-east-1:968220652823:certificate/09d7005d-2608-4201-848c-63ea2661ec02
+    alb.ingress.kubernetes.io/target-type: ip
 
-  alb.ingress.kubernetes.io/scheme: internet-facing
-  alb.ingress.kubernetes.io/group.name: sameer
+    alb.ingress.kubernetes.io/scheme: internet-facing
+    alb.ingress.kubernetes.io/group.name: sameer
 spec:
   ingressClassName: albs
   rules:
