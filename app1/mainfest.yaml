@@ -48,8 +48,9 @@ metadata:
   name: app1
   annotations:
   alb.ingress.kubernetes.io/listen-ports: '[{"HTTPS": 443}]'
-  alb.ingress.kubernetes.io/certificate-arn: arn:aws:acm:us-east-1:968220652823:certificate/334d8dd0-388f-41f6-a7b7-a0b46c34fd63
+  alb.ingress.kubernetes.io/certificate-arn: arn:aws:acm:us-east-1:968220652823:certificate/09d7005d-2608-4201-848c-63ea2661ec02
   alb.ingress.kubernetes.io/target-type: ip
+
   alb.ingress.kubernetes.io/scheme: internet-facing
   alb.ingress.kubernetes.io/group.name: sameer
 spec:
