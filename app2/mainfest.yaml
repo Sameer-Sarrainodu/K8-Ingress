@@ -60,8 +60,8 @@ spec:
   - host: "app2.sharkdev.shop"
   - http:
       paths:
-      - path: "/"
-        pathType: Prefix
+      - pathType: Prefix
+        path: "/"
         backend:
           service:
             name: app2
